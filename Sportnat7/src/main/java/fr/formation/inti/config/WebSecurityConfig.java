@@ -70,7 +70,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .usernameParameter("pseudo")//
                 .passwordParameter("mdp")
                 // Config for Logout Page
-                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/login");
+                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/view/login");
  
         // Config Remember Me.
         http.authorizeRequests().and() //
