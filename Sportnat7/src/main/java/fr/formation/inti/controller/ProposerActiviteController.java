@@ -15,7 +15,7 @@ import fr.formation.inti.service.ActiviteRecordService;
 
 
 	@Controller
-	public class proposerActiviteController {
+	public class ProposerActiviteController {
 
 		@Autowired
 		ActiviteDao dao;
@@ -30,7 +30,7 @@ import fr.formation.inti.service.ActiviteRecordService;
 		@GetMapping("/saveAct")
 		public String saveSportif(ActiviteRecord ActiviteRecord) {
 			dao.save(ActiviteRecord);
-			return "view/login/rechercherAct";
+			return "redirect:/rechercherAct";
 		}
 		}
 		

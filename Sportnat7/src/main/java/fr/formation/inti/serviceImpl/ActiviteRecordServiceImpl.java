@@ -1,4 +1,4 @@
-package fr.formation.inti.service.impl;
+package fr.formation.inti.serviceImpl;
 
 import java.util.List;
 
