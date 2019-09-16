@@ -20,10 +20,10 @@ public class ActiviteRecordController {
 	}
 
 
-	@GetMapping(path="/rechercherAct")
+	@GetMapping("/rechercherAct")
 	public String getAll(Model model) {
 		model.addAttribute("listActivite", serviceActivite.getActivite());
-		return "view/rechercherAct";
+		return "view/login/rechercherAct";
 	}
 	
 	
