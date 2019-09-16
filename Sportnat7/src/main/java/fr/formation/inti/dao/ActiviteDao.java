@@ -11,6 +11,6 @@ public interface ActiviteDao  extends JpaRepository<ActiviteRecord, Integer> {
 	
 
 
-	public List<ActiviteRecord> findByLieuLike(String lieu);
+	public List<ActiviteRecord> findAll();
 }
 
